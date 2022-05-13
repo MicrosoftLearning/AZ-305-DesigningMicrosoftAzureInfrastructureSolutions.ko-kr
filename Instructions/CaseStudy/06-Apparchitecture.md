@@ -2,16 +2,14 @@
 casestudy:
   title: 앱 아키텍처 솔루션 설계
   module: App architecture solutions
-ms.openlocfilehash: 78b1c861678ff255c4080978cbd7d02d46d58aca
-ms.sourcegitcommit: 0398c15157de2f621dd945e76523b824e500901c
+ms.openlocfilehash: 74d8456a5aef1053bcb7faf3990db764d147acba
+ms.sourcegitcommit: 2821f20a573854d6de4599a4edf7cb1bc0fe0ce1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "139134250"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144556393"
 ---
 # <a name="design-an-app-architecture-solution"></a>앱 아키텍처 솔루션 설계
-
-예상 시간: 90분
 
 ## <a name="requirements"></a>요구 사항
 

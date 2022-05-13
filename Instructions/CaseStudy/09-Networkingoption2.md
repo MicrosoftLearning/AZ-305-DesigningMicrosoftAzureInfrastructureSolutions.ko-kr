@@ -2,16 +2,14 @@
 casestudy:
   title: 네트워크 솔루션 설계 -BI 엔터프라이즈 애플리케이션
   module: Network infrastructure solutions
-ms.openlocfilehash: a31df2ef4ef67fddbce5d84922176f39fe326c2d
-ms.sourcegitcommit: 0398c15157de2f621dd945e76523b824e500901c
+ms.openlocfilehash: 5c0ed35972902de7019ae521b018612e55f219e8
+ms.sourcegitcommit: 2821f20a573854d6de4599a4edf7cb1bc0fe0ce1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "139134234"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144556366"
 ---
 # <a name="design-a-network-infrastructure-solution"></a>네트워크 인프라 솔루션 설계  
-
-예상 시간: 60분
 
 ## <a name="requirements"></a>요구 사항
 

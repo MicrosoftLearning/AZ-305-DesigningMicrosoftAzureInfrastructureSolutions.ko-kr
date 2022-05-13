@@ -1,15 +1,13 @@
 ---
-ms.openlocfilehash: 3a9b3c04c88b0a683600ff83229abe631961c356
-ms.sourcegitcommit: 0398c15157de2f621dd945e76523b824e500901c
+ms.openlocfilehash: 4da5127efa84918e29bb86f80b83db7b1cf5aa6f
+ms.sourcegitcommit: 2821f20a573854d6de4599a4edf7cb1bc0fe0ce1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "139134235"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144556369"
 ---
 
 # <a name="design-a-network-infrastructure-solution"></a>네트워크 인프라 솔루션 설계  
-
-예상 시간: 60분
 
 ## <a name="requirements"></a>요구 사항
 

@@ -2,16 +2,14 @@
 casestudy:
   title: Fabrikam Residences
   module: Logging and monitoring solutions
-ms.openlocfilehash: 017ba6cc7d6e1d475310d46a7b9a597ade277127
-ms.sourcegitcommit: 0398c15157de2f621dd945e76523b824e500901c
+ms.openlocfilehash: 7d72215c0c120f237dca5ca60d8eb9d3f77a939c
+ms.sourcegitcommit: 2821f20a573854d6de4599a4edf7cb1bc0fe0ce1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "139134242"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144556390"
 ---
-사례 연구: Fabrikam Residences
-
-예상 시간: 90분
+# <a name="case-study-fabrikam-residences"></a>사례 연구: Fabrikam Residences
 
 ## <a name="requirements"></a>요구 사항
 

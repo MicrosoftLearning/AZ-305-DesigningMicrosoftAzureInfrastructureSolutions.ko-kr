@@ -2,16 +2,14 @@
 casestudy:
   title: 비관계형 스토리지 솔루션 설계
   module: Non-relational storage solutions
-ms.openlocfilehash: c7316d1d0b338c37f6a7c6822672c06971c0739b
-ms.sourcegitcommit: 0398c15157de2f621dd945e76523b824e500901c
+ms.openlocfilehash: b0d2653fbf26cb39edd16cd8c6949f5e5d990cdf
+ms.sourcegitcommit: 2821f20a573854d6de4599a4edf7cb1bc0fe0ce1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "139134253"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144556387"
 ---
 # <a name="design-non-relational-storage-case-study"></a>비관계형 스토리지 설계 사례 연구
-
-예상 시간: 90분
 
 ## <a name="requirements"></a>요구 사항
 

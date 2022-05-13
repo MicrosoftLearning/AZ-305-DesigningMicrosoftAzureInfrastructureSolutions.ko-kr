@@ -2,16 +2,14 @@
 casestudy:
   title: 인증 및 권한 부여 솔루션 디자인
   module: Authentication and authorization solutions
-ms.openlocfilehash: 3e3244d7d88028c8f0e839323823bcc64ee55b86
-ms.sourcegitcommit: 0398c15157de2f621dd945e76523b824e500901c
+ms.openlocfilehash: 4a0436e9f2d93e88fc9d1f42effb74569917c6a5
+ms.sourcegitcommit: 2821f20a573854d6de4599a4edf7cb1bc0fe0ce1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "139134249"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144556378"
 ---
 # <a name="design-authentication-and-authorization-solutions"></a>인증 및 권한 부여 솔루션 디자인
-
-예상 시간: 60분
 
 ## <a name="requirements"></a>요구 사항
 

@@ -2,16 +2,14 @@
 casestudy:
   title: 거버넌스 솔루션 설계
   module: Governance solutions
-ms.openlocfilehash: 9b0f69e46da7cc92640671a2cb917eb75d9b11ee
-ms.sourcegitcommit: 0398c15157de2f621dd945e76523b824e500901c
+ms.openlocfilehash: ebf3ce58cc75900f97cdc80a24caeac142fabf9d
+ms.sourcegitcommit: 2821f20a573854d6de4599a4edf7cb1bc0fe0ce1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "139134236"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144556375"
 ---
 # <a name="design-a-governance-solution"></a>거버넌스 솔루션 설계
-
-예상 시간: 90분
 
 ## <a name="requirements"></a>요구 사항
 
