@@ -2,26 +2,20 @@
 casestudy:
   title: 앱 아키텍처 솔루션 설계
   module: App architecture solutions
-ms.openlocfilehash: 74d8456a5aef1053bcb7faf3990db764d147acba
-ms.sourcegitcommit: 2821f20a573854d6de4599a4edf7cb1bc0fe0ce1
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "144556393"
 ---
 # <a name="design-an-app-architecture-solution"></a>앱 아키텍처 솔루션 설계
 
 ## <a name="requirements"></a>요구 사항
 
-Tailwind Traders는 웹 사이트를 업데이트하여 마케팅에서 제공하는 기존 사진 외에도 고객이 제공한 제품 이미지를 포함하기를 기대합니다. 그들은 사용 중인 제품의 사진이 더 많을 경우 잠재 고객이 과거 고객이 제품 구매 후 얼마나 제품을 좋아했는지 더 잘 느낄 수 있다고 믿습니다. 아래에 설명된 대로 몇 가지 요구 사항이 있습니다.
+Tailwind Traders is looking to update their website to include customer supplied product images in addition to the already existing photos provided by marketing. They believe that having more photos of products in use will give potential customers a better feel for how past customers loved their products after purchasing them. They do have some requirements as outlined below:
 
-* 업로드된 이미지는 웹 사이트에 게시되기 전에 스캔해야 합니다. 법률 및 마케팅은 모두 초기 업로드 후 회사에 제대로 반영되지 않거나 법적 문제를 일으킬 수 있는 문제에 대해 이미지를 검사할 것을 요청하고 있습니다. 필요한 스캔을 수행할 수 있는 사내 API가 이미 개발 및 배포되었습니다. 
+* Uploaded images will need to be scanned before getting posted on the website. Legal and Marketing are both requesting that after initial upload, the images be checked for any issues that reflect poorly upon the company or could cause legal issues. An in-house API has already been developed and deployed that can perform the necessary scanning. 
 
-* Tailwind Traders는 기존 패턴에 따라 하루 종일 이미지 업로드가 매우 고르지 않게 될 것으로 예상합니다. 특정 기간에는 스캔 소프트웨어가 처리할 수 있는 것보다 더 많은 업로드가 발생할 수 있지만, 다른 기간에는 업로드가 거의 또는 전혀 발생하지 않을 수 있습니다.
+* Based on existing patterns, Tailwind Traders expects the image uploads to happen very unevenly throughout the day. Certain periods may experience more uploads than the scanning software can handle, while other periods may experience very few or no uploads.
 
 * 업로드된 이미지가 시스템에서 스캔되고 승인되었으면, Tailwind Traders는 고객에게 이미지 공유를 감사해하는 메일을 보낼 것을 원합니다.
 
-* 특히 Tailwind Traders는 이 기능이 초기에 얼마나 인기가 있는지 잘 모르기 때문에 솔루션의 비용 및 관리가 문제입니다. 가능한 경우 비용을 최소화하고 서버리스 솔루션을 활용합니다.
+* Cost and management of the solution is a concern, especially since Tailwind Traders isn’t sure how popular this feature will be initially. Minimize costs and leverage serverless solutions where possible.
 
  
 
@@ -31,7 +25,7 @@ Tailwind Traders는 웹 사이트를 업데이트하여 마케팅에서 제공�
 
 ## <a name="task"></a>Task
 
-회사 웹 사이트에 고객 이미지를 추가하기 위한 아키텍처를 설계합니다. 
+회사 웹 사이트에 고객 이미지를 추가하기 위한 아키텍처를 설계합니다.  
 
 * 이미지를 어디에 저장해야 하나요?
 

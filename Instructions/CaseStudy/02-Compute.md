@@ -2,35 +2,30 @@
 casestudy:
   title: 컴퓨팅 솔루션 디자인
   module: Compute solutions
-ms.openlocfilehash: 5b17d7b5813935db70c7bdd3f07991aa3ba81d96
-ms.sourcegitcommit: 2821f20a573854d6de4599a4edf7cb1bc0fe0ce1
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "144556381"
 ---
+
 # <a name="design-a-compute-solution"></a>컴퓨팅 솔루션 디자인
 
 ## <a name="requirements"></a>요구 사항
 
-Tailwind Traders는 제품 카탈로그 애플리케이션을 클라우드로 마이그레이션하려고 합니다. 이 애플리케이션에는 SQL Server를 데이터 저장소로 사용하는 기존의 3계층 구성이 있습니다. IT 팀은 애플리케이션을 현대화하는 데 도움이 될 수 있기를 바랍니다. 이들은 이 다이어그램과 개선될 수 있는 여러 영역을 제공했습니다. 
+Tailwind Traders would like to migrate their product catalog application to the cloud. This application has a traditional 3-tier configuration using SQL Server as the data store. The IT team hopes you can help modernize the application. They have provided this diagram and several areas that could be improved. 
 
 ![컴퓨팅 아키텍처](media/compute.png)
 
-* 프런트 엔드 애플리케이션은 .NET 코어 기반 웹앱입니다. 최고 사용 기간에는 매시간 1750명의 고객이 웹 사이트를 방문합니다. 
+* The frontend application is a .NET core-based web app. During peak periods 1750 customers visit the website each hour. 
 
-* 애플리케이션은 프런트 엔드 계층의 IIS 웹 서버에서 실행됩니다. 이 계층은 제품 구매에 대한 모든 고객 요청을 처리합니다. 최신 휴일 판매 기간 동안 프런트 엔드 서버는 성능 제한에 도달했으며 페이지 로드가 오래되었습니다. IT 팀은 서버를 더 추가하는 것을 고려했지만, 근무 외 시간에는 서버가 유휴 상태인 경우가 많습니다.
+* The application runs on IIS web servers in a front-end tier. This tier handles all customer requests for purchasing products. During the latest holiday sale, the front-end servers reached their performance limits and page loads were lengthy. The IT team has considered adding more servers, but during off hours the servers are often idle.
 
-* 중간 계층은 고객 요청을 처리하는 비즈니스 논리를 호스트합니다. 이러한 요청은 종종 지원 센터 지원을 위한 것입니다. 지원 요청이 대기되고 최근 대기 시간이 매우 길어졌습니다. 고객은 담당자를 기다리지 않고 메일을 받습니다. 그러나 많은 고객이 기다리기보다는 좌절하고 연결을 끊고 있는 것 같습니다. 고객 요청은 시간당 75-125건입니다. 
+* The middle tier hosts the business logic that processes customer requests. These requests are often for help desk support. Support requests are queued and lately the wait times have been very long. Customers are offered email rather than wait for a representative. But many customers seem frustrated and are disconnecting rather than wait. Customer requests are 75-125 per hour. 
 
-* 백엔드 계층은 SQL Server 데이터베이스를 사용하여 고객 주문을 저장합니다. 현재 백엔드 데이터베이스 서버의 성능이 좋습니다.
+* Tailwind Traders는 제품 카탈로그 애플리케이션을 클라우드로 마이그레이션하려고 합니다.
 
 * 고가용성이 중요하지만, 법적 요구 사항으로 인해 회사는 모든 리소스를 단일 지역에서 유지해야 합니다.
 
 ## <a name="tasks"></a>작업
 
-* **프런트 엔드 계층**. 프런트 엔드 계층에 권장되는 Azure 컴퓨팅 서비스는 무엇인가요? 솔루션을 결정한 이유를 설명합니다. 
+* 이 애플리케이션에는 SQL Server를 데이터 저장소로 사용하는 기존의 3계층 구성이 있습니다. 
 
-* **중간 계층**. 중간 계층에 권장되는 Azure 컴퓨팅 서비스는 무엇인가요? 솔루션을 결정한 이유를 설명합니다. 
+* IT 팀은 애플리케이션을 현대화하는 데 도움이 될 수 있기를 바랍니다. 
 
 고품질의 안정적이고 효율적인 클라우드 아키텍처를 생성하기 위해 Well Architected Framework 핵심 요소를 통합하려면 어떻게 해야 할까요?
