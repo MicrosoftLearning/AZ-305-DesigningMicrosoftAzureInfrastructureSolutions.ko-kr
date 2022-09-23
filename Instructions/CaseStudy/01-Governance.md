@@ -1,36 +1,34 @@
 ---
 casestudy:
-    title: '거버넌스 솔루션 디자인'
-    module: '거버넌스 솔루션'
+  title: 거버넌스 솔루션 설계
+  module: Governance solutions
 ---
 
-# 거버넌스 솔루션 디자인
+# <a name="design-a-governance-solution"></a>거버넌스 솔루션 설계
 
-소요 시간: 90분
+## <a name="requirements"></a>요구 사항
 
-## 요구 사항
+Tailwind Traders is planning on making some significant changes to their governance solution. They have asked for your assistance with recommendations and questions. Here are the specific requirements.
 
-Tailwind Traders는 거버넌스 솔루션을 대폭 변경할 계획입니다. 그래서 여러분에게 권장 솔루션을 제시해 줄 것을 요청했으며, 변경과 관련된 궁금한 점을 문의하려고 합니다. 구체적인 요구 사항은 다음과 같습니다.
+* <bpt id="p1">**</bpt>Cost and accounting<ept id="p1">**</ept>. Tailwind Traders has two main business units that handle Apparel and Sporting Goods. Each of the business units consist of three departments: Product Development, Marketing, and Sales. Each business unit and subunit will be responsible for tracking their Azure spend. At the same time, the Enterprise IT team will be responsible for providing company-wide Azure cost reporting.
 
-* **비용 및 회계**. Tailwind Traders의 주요 사업부 두 곳에서는 의류와 스포츠 용품을 취급합니다. 각 사업부에는 제품 개발, 마케팅, 영업의 3개 부서가 있습니다. 각 사업부와 하위 사업부에서 Azure 관련 지출을 추적합니다. 그와 동시에 기업 IT 팀이 회사 전체에서 발생하는 Azure 비용을 보고할 예정입니다.
+* <bpt id="p1">**</bpt>New development project<ept id="p1">**</ept>. The company has a new development project for customer feedback. The CFO wants to ensure all costs associated with the project are captured. For the testing phase, workloads should be hosted on lower cost virtual machines. The virtual machines should be named to indicate they are part of the project. Any instances of non-compliance with resource consistency rules should be automatically identified.
 
-* **신규 개발 프로젝트**. Tailwind Traders는 고객 피드백 수집을 위한 신규 개발 프로젝트를 진행하고 있습니다. CFO의 지시에 따라, 프로젝트와 관련하여 발생하는 모든 비용 정보를 파악해야 합니다. 테스트 단계에서는 저렴한 가상 머신에서 워크로드를 호스트해야 합니다. 가상 머신에는 프로젝트용임을 나타내는 이름을 지정해야 합니다. 또한 리소스 일관성 규칙 비준수 상황을 자동으로 파악할 수 있어야 합니다.
-
-## 작업
+## <a name="tasks"></a>작업
 
 1. **비용 및 회계** 
 
-    * Tailwind Traders는 어떤 방식으로 구독 및 관리 그룹을 구성할 수 있나요? 요구 사항을 충족하기에 가장 적합한 방법은 무엇인가요? 
+    * What are different ways Tailwind Traders could organize their subscriptions and management groups. Which would be the best to meet their requirements? 
 
-    * Tailwind Traders에서 사용할 수 있는 두 가지 대체 계층 구조를 디자인하고 의사 결정 프로세스를 설명하세요.
+    * 두 가지 대체 계층 구조를 설계하고 의사결정 프로세스를 설명합니다.
 
-2. **신규 개발 프로젝트** 
+2. **새 개발 프로젝트** 
 
-    * Tailwind Traders는 어떤 방식으로 신규 개발 프로젝트의 비용을 추적할 수 있나요?
+    * Tailwind Traders에서 새 개발 프로젝트에 대한 비용을 추적할 수 있는 다양한 방법은 무엇인가요?
 
-    * 가상 머신 크기 조정 및 이름 지정 요구 사항을 준수하려면 어떻게 해야 하나요? 
+    * 가상 머신 크기 조정 및 명명에 대한 요구 사항을 준수하려면 어떻게 해야 하나요?  
 
-    * 요구 사항을 충족할 수 있는 방법을 두 가지 이상 제안하고 최종적으로 결정한 방법에 대해 설명하세요. 
+    * Tailwind Traders는 거버넌스 솔루션에 대한 몇 가지 중요한 변경을 계획하고 있습니다. 
 
-안정적이며 효율적인 고품질 클라우드 아키텍처를 생성하려면 Well-Architected Framework 원칙을 어떻게 통합해야 하나요?
+고품질의 안정적이고 효율적인 클라우드 아키텍처를 생성하기 위해 Well Architected Framework 핵심 요소를 통합하려면 어떻게 해야 할까요?
 

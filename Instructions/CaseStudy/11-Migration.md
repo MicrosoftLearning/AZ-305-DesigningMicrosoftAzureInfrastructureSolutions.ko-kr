@@ -1,6 +1,6 @@
 ---
 casestudy:
-    title: '공식 사례 연구 없음'
-    module: '마이그레이션 솔루션'
+  title: 공식적인 사례 연구 없음
+  module: Migration solutions
 ---
-이 모듈에는 공식 사례 연구가 없습니다. 
+이 모듈에는 공식적인 사례 연구가 없습니다. 

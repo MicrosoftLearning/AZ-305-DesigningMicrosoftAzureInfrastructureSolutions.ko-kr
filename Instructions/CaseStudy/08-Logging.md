@@ -1,6 +1,71 @@
 ---
 casestudy:
-    title: '공식 사례 연구 없음'
-    module: '로깅 및 모니터링 솔루션'
+  title: Fabrikam Residences
+  module: Logging and monitoring solutions
 ---
-이 모듈에는 공식 사례 연구가 없습니다. 
+# <a name="case-study-fabrikam-residences"></a>사례 연구: Fabrikam Residences
+
+## <a name="requirements"></a>요구 사항
+
+**이 사례 연구에서는 다음 모듈 및 사례 연구를 완료했어야 합니다.  컴퓨팅, 관계형 데이터, 비관계형 데이터, 인증, 애플리케이션 아키텍처**
+
+You have taken a new position with Fabrikam Residences, which is very successful and is experiencing rapid growth. Fabrikam Residences is a building contractor for new homes and major home renovations and have become successful by providing quality buildings and offering newer integrated home technologies than their competitors.  
+
+Currently these technologies are provided and managed by separate sub-contract companies. The owners of Fabrikam Residences want to begin offering these upgraded technology options in-house to provide better quality, support and data on customer patterns and needs. 
+ 
+Initially, the company wants to offer HVAC (heating and cooling) control and monitoring, security system monitoring and alerts, and home automation. This will require a new website, data storage solution and data ingestion solution.
+
+The company has seen tremendous growth over the past 2 years. The company is estimating it may double in size over the next 12-18 months. With such rapid growth in the regional market, the company has no current plans to expand outside of the regional market.
+
+## <a name="current-situation"></a>현재 상황
+
+The Fabrikam Headquarters operates a small datacenter in a single location. The datacenter hosts the company <bpt id="p1">**</bpt>Project Management (PM) software<ept id="p1">**</ept>.
+
+![Project Management 소프트웨어 아키텍처](media/fabrikam.png)
+
+- 귀하는 매우 성공적이고 급속한 성장을 경험하고 있는 Fabrikam Residences에서 새로운 직책을 맡았습니다.  
+
+- 이미지와 문서는 전용 NAS 어플라이언스에 있는 서버의 매핑된 드라이브에 저장됩니다.
+
+- 회사 사용자, 사무실 직원은 웹 프런트 엔드를 사용하여 공급 배달 일정 및 변경 주문과 같은 데이터를 입력합니다.
+
+-   Fabrikam Residences는 신축 주택과 대대적인 주택 개조를 위한 건축 계약업체이며, 양질의 건물을 제공하고 경쟁사보다 새로운 통합 주택 기술을 제공함으로써 성공을 거두었습니다.
+
+The <bpt id="p1">**</bpt>Home Technology software<ept id="p1">**</ept> is currently provided and hosted by third parties and involves at least three different websites the customer must visit.  It is proposed the software be replaced with an in-house developed and unified solution.
+
+![HVAC, 보안 및 자동화 앱 다이어그램](media/software.png)
+
+## <a name="requirements"></a>요구 사항 
+
+**Project Management 소프트웨어**
+
+- 가능한 한 많은 시스템을 퍼블릭 클라우드 공급자로 마이그레이션합니다.
+
+- 현재 이러한 기술은 별도의 하도급 회사에서 제공하고 관리합니다.
+
+- Fabrikam Residences의 소유자는 고객 패턴 및 요구사항에 대한 더 좋은 품질, 지원 및 데이터를 제공하기 위해 이러한 업그레이드 된 기술 옵션을 사내에서 제공하기를 원합니다.
+
+**새로운 홈 테크놀로지 솔루션**
+
+- 홈 모니터링 센서에서 지속적으로 데이터를 수집하는 새 솔루션을 추가합니다.
+  - 추세 분석 및 보고를 위한 일부 센서 판독값을 데이터베이스화합니다.
+  - 소유자 요구사항에 따라 구성 가능한 실시간 경고를 제공합니다.
+  
+- 주택 소유자 기본 설정 및 설정을 유지하도록 관계형 데이터베이스 솔루션을 설계합니다.
+  - 시스템을 확장할 수 있어야 합니다.
+  - 중복성은 매우 중요합니다.
+  
+- The new unified website will be developed in house and hosted on Linux.  This website will be used to view monitors and change preferences for items such as temperature or alert thresholds. Loads can vary widely, and the system must be able to scale quickly.
+
+-   사용자에게 다른 사용자 계정 및 암호를 만들지 않고 시스템에 로그인할 수 있는 방법을 제공합니다.
+
+- 보안 제어를 구현하고 회사가 업계 표준 모범 사례와 일치하는 방법을 설명하는 주간 보고서를 제공합니다.
+
+## <a name="tasks"></a>작업 
+
+1. 처음에 이 회사는 HVAC(난방 및 냉방) 제어 및 모니터링, 보안 시스템 모니터링 및 경고, 홈 자동화를 제공하고자 합니다.
+
+2. 이를 위해서는 새 웹 사이트, 데이터 스토리지 솔루션 및 데이터 수집 솔루션이 필요합니다.
+
+고품질의 안정적이고 효율적인 클라우드 아키텍처를 생성하기 위해 Well Architected Framework 핵심 요소를 통합하려면 어떻게 해야 할까요?
+

@@ -1,49 +1,47 @@
 ---
 casestudy:
-    title: '인증 및 권한 부여 솔루션 디자인'
-    module: '인증 및 권한 부여 솔루션'
+  title: 인증 및 권한 부여 솔루션 디자인
+  module: Authentication and authorization solutions
 ---
 
 
-# 인증 및 권한 부여 솔루션 디자인
+# <a name="design-authentication-and-authorization-solutions"></a>인증 및 권한 부여 솔루션 디자인
 
-소요 시간: 60분
+## <a name="requirements"></a>요구 사항
 
-## 요구 사항
-
-Tailwind Traders는 높은 사업 실적을 기록하고 있으며, 직원 수도 계속 늘어나고 있습니다. 최근에는 스포츠 의류 업계의 온라인 대리점을 인수했으며, 마케팅 홍보 자료 제작을 아웃소싱할 파트너사도 선정했습니다. Tailwind Traders는 사용자 및 그룹 계정에 Azure Active Directory를 사용하고 있습니다. Tailwind Traders의 IT 부서에서 여러분에게 다음의 두 이니셔티브와 관련한 지원을 요청했습니다. 
+Tailwind Traders is doing very well and is expanding their workforce. They have successfully acquired an online retailer in the sports apparel space. The company has also located a partner to outsource marketing literature. Tailwind Traders is using Azure Active Directory for user and groups accounts. Here are two specific initiatives the IT department would like you to help with. 
 
 **새 사용자 계정**
 
-  * 온라인 판매점 인수로 인해 Tailwind Traders 직원이 75명 늘어났습니다. 모든 신규 사용자에게는 판매점의 기존 도메인에 온-프레미스 Active Directory Domain Services 계정이 있습니다.
+  * The online retailer acquisition will add 75 employees to Tailwind Traders. All the new users have on-premises Active Directory Domain Services accounts in the retailer’s existing domain.
 
-  * 신규 마케팅 파트너사가 첫 자료를 제작하려면 직원 15명이 Tailwind Traders 네트워크에 액세스해야 합니다. 이러한 직원은 파트너 AAD 테넌트의 Azure AD 계정을 이미 보유하고 있습니다. 
+  * The new marketing partner will initially have 15 employees who will need corporate access. These employees already have Azure AD accounts in the partner’s AAD tenant. 
 
-  * 신규 직원은 여러 지역에서 근무하고 있으며, 이러한 직원에게 새 업무에 맞는 계정 권한을 부여해야 합니다. 기존 직원의 역할도 다소 변경될 것으로 예상됩니다. 
+  * The new employees are located at various geographic locations and will need account privileges for their new job roles. Some changes to existing employee roles are expected. 
 
-  * IT 부서에서는 이번 이니셔티브를 통해 새로운 ID 보안 기능을 도입하고자 합니다. 
+  * IT 부서는 이 기회를 통해 새로운 ID 보안 기능을 포함하려고 합니다. 
 
-**새 애플리케이션 액세스.**
+**새 애플리케이션 액세스**
 
-  * 사업 개발 팀은 Azure VM에서 애플리케이션을 실행하며 Azure SQL 데이터베이스에 데이터를 저장합니다. 이 팀에서는 VM이 Azure SQL 데이터베이스를 안전하게 쿼리할 수 있도록 해야 합니다. 
-  * 또한 애플리케이션 코드나 구성 파일에 자격 증명을 저장하지 않고도 SQL 데이터베이스에 안전하게 액세스할 수 있는 온-프레미스 서버도 필요합니다.
+  * Tailwind Traders는 매우 잘하고 있으며 인력을 확장하고 있습니다. 
+  * 또한 애플리케이션 코드 또는 구성 파일에 자격 증명을 저장하지 않고도 SQL 데이터베이스에 안전하게 액세스할 수 있는 온-프레미스 서버가 필요합니다.
 
-## 작업
+## <a name="tasks"></a>작업
 
 **새 사용자 계정**
 
-  * 인수한 판매점의 사용자 계정을 통합하는 프로세스를 다이어그램으로 작성하세요.
+  * 획득한 사용자 계정을 가져오는 프로세스를 다이어그램으로 표시합니다.
 
-  * 신규 파트너 계정을 추가하는 프로세스를 다이어그램으로 작성하세요. 
+  * 새 파트너 계정을 추가하는 프로세스를 다이어그램으로 표시합니다. 
 
-  * 상기 요구 사항을 충족하는 데 사용할 도구를 포함하세요. 제안 솔루션의 이점을 세 가지 이상 제시하세요. 
+  * 그들은 성공적으로 스포츠 의류 공간에서 온라인 소매 업체를 인수했습니다. 
 
-* Tailwind Traders 사용자 ID 솔루션을 개선할 수 있는 권장 사항을 세 가지 이상 제시하세요. 중요도순으로 권장 사항의 순위를 정하세요. 해당 권장 사항을 제안하는 이유를 포함하세요. 
+* 또한 이 회사는 마케팅 문헌을 아웃소싱하는 파트너를 배치했습니다. 
 
-**새 애플리케이션 액세스.**
+**새 애플리케이션 액세스**
 
-  * 사업 개발 애플리케이션용 액세스 솔루션을 제시하세요.
+  * 비즈니스 개발 애플리케이션에 대한 액세스 솔루션을 제공합니다.
 
-  * 온-프레미스 리소스용 액세스 솔루션을 제시하세요.
+  * 온-프레미스 리소스에 대한 액세스 솔루션을 제공합니다.
 
-안정적이며 효율적인 고품질 클라우드 아키텍처를 생성하려면 Well-Architected Framework 원칙을 어떻게 통합해야 하나요?
+고품질의 안정적이고 효율적인 클라우드 아키텍처를 생성하기 위해 Well Architected Framework 핵심 요소를 통합하려면 어떻게 해야 할까요?
