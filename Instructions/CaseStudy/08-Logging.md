@@ -9,29 +9,29 @@ casestudy:
 
 **이 사례 연구에서는 다음 모듈 및 사례 연구를 완료했어야 합니다.  컴퓨팅, 관계형 데이터, 비관계형 데이터, 인증, 애플리케이션 아키텍처**
 
-You have taken a new position with Fabrikam Residences, which is very successful and is experiencing rapid growth. Fabrikam Residences is a building contractor for new homes and major home renovations and have become successful by providing quality buildings and offering newer integrated home technologies than their competitors.  
+귀하는 매우 성공적이고 급속한 성장을 경험하고 있는 Fabrikam Residences에서 새로운 직책을 맡았습니다. Fabrikam Residences는 신축 주택과 대대적인 주택 개조를 위한 건축 계약업체이며, 양질의 건물을 제공하고 경쟁사보다 새로운 통합 주택 기술을 제공함으로써 성공을 거두었습니다.  
 
-Currently these technologies are provided and managed by separate sub-contract companies. The owners of Fabrikam Residences want to begin offering these upgraded technology options in-house to provide better quality, support and data on customer patterns and needs. 
+현재 이러한 기술은 별도의 하도급 회사에서 제공하고 관리합니다. Fabrikam Residences의 소유자는 고객 패턴 및 요구사항에 대한 더 좋은 품질, 지원 및 데이터를 제공하기 위해 이러한 업그레이드 된 기술 옵션을 사내에서 제공하기를 원합니다. 
  
-Initially, the company wants to offer HVAC (heating and cooling) control and monitoring, security system monitoring and alerts, and home automation. This will require a new website, data storage solution and data ingestion solution.
+처음에 이 회사는 HVAC(난방 및 냉방) 제어 및 모니터링, 보안 시스템 모니터링 및 경고, 홈 자동화를 제공하고자 합니다. 이를 위해서는 새 웹 사이트, 데이터 스토리지 솔루션 및 데이터 수집 솔루션이 필요합니다.
 
-The company has seen tremendous growth over the past 2 years. The company is estimating it may double in size over the next 12-18 months. With such rapid growth in the regional market, the company has no current plans to expand outside of the regional market.
+이 회사는 지난 2년 동안 엄청난 성장을 보였습니다. 이 회사는 향후 12-18개월 동안 규모가 두 배가 될 것으로 추정하고 있습니다. 지역 시장에서 이러한 급속한 성장을 거두면서, 회사는 현재 지역 시장 외부로 확장할 계획이 없습니다.
 
 ## <a name="current-situation"></a>현재 상황
 
-The Fabrikam Headquarters operates a small datacenter in a single location. The datacenter hosts the company <bpt id="p1">**</bpt>Project Management (PM) software<ept id="p1">**</ept>.
+Fabrikam 본사는 단일 위치에서 작은 데이터 센터를 운영합니다. 데이터 센터는 회사의 **PM(Project Management) 소프트웨어**를 호스트합니다.
 
 ![Project Management 소프트웨어 아키텍처](media/fabrikam.png)
 
-- 귀하는 매우 성공적이고 급속한 성장을 경험하고 있는 Fabrikam Residences에서 새로운 직책을 맡았습니다.  
+- PM 소프트웨어는 타사 Windows 애플리케이션을 사용합니다. 애플리케이션은 단일 Microsoft SQL Server 백엔드가 있는 2노드 NLB(네트워크 부하 분산) 클러스터에서 실행됩니다.  
 
 - 이미지와 문서는 전용 NAS 어플라이언스에 있는 서버의 매핑된 드라이브에 저장됩니다.
 
 - 회사 사용자, 사무실 직원은 웹 프런트 엔드를 사용하여 공급 배달 일정 및 변경 주문과 같은 데이터를 입력합니다.
 
--   Fabrikam Residences는 신축 주택과 대대적인 주택 개조를 위한 건축 계약업체이며, 양질의 건물을 제공하고 경쟁사보다 새로운 통합 주택 기술을 제공함으로써 성공을 거두었습니다.
+-   현장 관리자는 Windows 노트북과 태블릿을 오프라인으로 사용하여 건물 진행 상황 및 기타 세부 사항을 지속적으로 기록합니다.  새 작업 주문과 같은 이러한 변경 내용은 로컬 변경 파일에 저장됩니다.  매일 하루가 끝나면 관리자는 사무실로 돌아가서 무선 네트워크에 연결하고 작은 스크립트를 실행하여 변경 파일을 FTP 서버에 업로드합니다.  두 번째 스크립트는 매일 밤 실행되어 모든 변경 파일을 처리하고 해당 내용을 Project Management 데이터베이스(Microsoft SQL Server)에 입력하도록 예약되었습니다.
 
-The <bpt id="p1">**</bpt>Home Technology software<ept id="p1">**</ept> is currently provided and hosted by third parties and involves at least three different websites the customer must visit.  It is proposed the software be replaced with an in-house developed and unified solution.
+**홈 테크놀로지 소프트웨어**는 현재 제3자가 제공하고 호스팅하며 고객이 방문해야 하는 3개 이상의 웹 사이트를 포함합니다.  소프트웨어를 사내에서 개발되고 통합된 솔루션으로 대체할 것을 제안합니다.
 
 ![HVAC, 보안 및 자동화 앱 다이어그램](media/software.png)
 
@@ -41,9 +41,9 @@ The <bpt id="p1">**</bpt>Home Technology software<ept id="p1">**</ept> is curren
 
 - 가능한 한 많은 시스템을 퍼블릭 클라우드 공급자로 마이그레이션합니다.
 
-- 현재 이러한 기술은 별도의 하도급 회사에서 제공하고 관리합니다.
+- 보안 문제가 제기되었기 때문에, FTP보다 더 안전한 시스템을 활용하도록 기존 스크립트를 바꿉니다. 또한 변경 파일이 업로드되는 즉시 처리되는지 확인하라는 메시지가 표시되었습니다.
 
-- Fabrikam Residences의 소유자는 고객 패턴 및 요구사항에 대한 더 좋은 품질, 지원 및 데이터를 제공하기 위해 이러한 업그레이드 된 기술 옵션을 사내에서 제공하기를 원합니다.
+- 프로젝트 관리 데이터베이스의 복원력을 높입니다. 성능은 문제가 되지 않지만 단일 하드웨어 오류가 발생한 경우 데이터베이스에 대한 액세스가 손실되는 것을 방지하려고 합니다.
 
 **새로운 홈 테크놀로지 솔루션**
 
@@ -55,7 +55,7 @@ The <bpt id="p1">**</bpt>Home Technology software<ept id="p1">**</ept> is curren
   - 시스템을 확장할 수 있어야 합니다.
   - 중복성은 매우 중요합니다.
   
-- The new unified website will be developed in house and hosted on Linux.  This website will be used to view monitors and change preferences for items such as temperature or alert thresholds. Loads can vary widely, and the system must be able to scale quickly.
+- 새로운 통합 웹 사이트는 사내에서 개발되어 Linux에서 호스팅됩니다.  이 웹 사이트는 모니터를 보고 온도 또는 경고 임계값과 같은 항목에 대한 기본 설정을 변경하는 데 사용됩니다. 부하는 매우 다양할 수 있으며 시스템은 신속하게 확장할 수 있어야 합니다.
 
 -   사용자에게 다른 사용자 계정 및 암호를 만들지 않고 시스템에 로그인할 수 있는 방법을 제공합니다.
 
@@ -63,9 +63,9 @@ The <bpt id="p1">**</bpt>Home Technology software<ept id="p1">**</ept> is curren
 
 ## <a name="tasks"></a>작업 
 
-1. 처음에 이 회사는 HVAC(난방 및 냉방) 제어 및 모니터링, 보안 시스템 모니터링 및 경고, 홈 자동화를 제공하고자 합니다.
+1. Project Management 소프트웨어에 대한 솔루션을 설계합니다. 설계의 각 구성 요소를 선택한 이유와 이것이 솔루션 요구 사항을 충족하는 방법을 설명할 준비를 합니다.
 
-2. 이를 위해서는 새 웹 사이트, 데이터 스토리지 솔루션 및 데이터 수집 솔루션이 필요합니다.
+2. 새 홈 테크놀로지 솔루션의 아키텍처를 설계합니다. 설계의 각 구성 요소를 선택한 이유와 이것이 솔루션 요구 사항을 충족하는 방법을 설명할 준비를 합니다.
 
 고품질의 안정적이고 효율적인 클라우드 아키텍처를 생성하기 위해 Well Architected Framework 핵심 요소를 통합하려면 어떻게 해야 할까요?
 

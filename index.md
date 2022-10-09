@@ -4,14 +4,14 @@ permalink: index.html
 layout: home
 ---
 
-# 콘텐츠 디렉터리
+# <a name="content-directory"></a>콘텐츠 디렉터리
 
-아래에 각 사례 연구의 하이퍼링크 목록이 나와 있습니다.
+각 사례 연구에 대한 하이퍼링크는 아래에 나열되어 있습니다.
 
-## 사례 연구
+## <a name="case-studies"></a>사례 연구
 
-{% assign casestudy = site.pages | where_exp:"page", "page.url contains '/Instructions/CaseStudy'" %}
+{% assign demos = site.pages | where_exp:"page", "page.url contains '/Instructions/Demos'" %}
 | 모듈 | 사례 연구 |
 | --- | --- | 
-{% for activity in casestudy  %}| {{ activity.casestudy.module }} | [{{ activity.casestudy.title }}{% if activity.casestudy.type %} - {{ activity.casestudy.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
+casestudy %}의 활동에 대한 {%| {{ activity.casestudy.module }} | [{{ activity.casestudy.title }} {% if activity.casestudy.type %} - {{ activity.casestudy.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
 {% endfor %}

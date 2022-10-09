@@ -9,21 +9,21 @@ casestudy:
 
 ## <a name="requirements"></a>요구 사항
 
-Tailwind Traders is doing very well and is expanding their workforce. They have successfully acquired an online retailer in the sports apparel space. The company has also located a partner to outsource marketing literature. Tailwind Traders is using Azure Active Directory for user and groups accounts. Here are two specific initiatives the IT department would like you to help with. 
+Tailwind Traders는 매우 잘하고 있으며 인력을 확장하고 있습니다. 그들은 성공적으로 스포츠 의류 공간에서 온라인 소매 업체를 인수했습니다. 또한 이 회사는 마케팅 문헌을 아웃소싱하는 파트너를 배치했습니다. Tailwind Traders는 사용자 및 그룹 계정에 Azure Active Directory를 사용하고 있습니다. IT 부서에서 도움을 드리기 위한 두 가지 특정 이니셔티브는 다음과 같습니다. 
 
 **새 사용자 계정**
 
-  * The online retailer acquisition will add 75 employees to Tailwind Traders. All the new users have on-premises Active Directory Domain Services accounts in the retailer’s existing domain.
+  * 온라인 소매점 인수는 Tailwind Traders에 75명의 직원을 추가합니다. 모든 새 사용자는 소매점의 기존 도메인에서 온-프레미스 Active Directory Domain Services 계정을 가집니다.
 
-  * The new marketing partner will initially have 15 employees who will need corporate access. These employees already have Azure AD accounts in the partner’s AAD tenant. 
+  * 새 마케팅 파트너에게는 처음에 회사 액세스가 필요한 15명의 직원이 있습니다. 이러한 직원은 파트너의 AAD 테넌트에서 Azure AD 계정을 이미 가지고 있습니다. 
 
-  * The new employees are located at various geographic locations and will need account privileges for their new job roles. Some changes to existing employee roles are expected. 
+  * 새 직원은 다양한 지리적 위치에 있으며 새 직책에 대한 계정 권한이 필요합니다. 기존 직원 역할에 대한 일부 변경이 예상됩니다. 
 
   * IT 부서는 이 기회를 통해 새로운 ID 보안 기능을 포함하려고 합니다. 
 
 **새 애플리케이션 액세스**
 
-  * Tailwind Traders는 매우 잘하고 있으며 인력을 확장하고 있습니다. 
+  * 비즈니스 개발 팀은 Azure VM에서 실행되는 애플리케이션과 Azure SQL 데이터베이스에 저장되는 데이터를 갖고 있습니다. 비즈니스 개발 팀은 VM이 Azure SQL 데이터베이스를 쿼리하도록 안전하게 허용해야 합니다. 
   * 또한 애플리케이션 코드 또는 구성 파일에 자격 증명을 저장하지 않고도 SQL 데이터베이스에 안전하게 액세스할 수 있는 온-프레미스 서버가 필요합니다.
 
 ## <a name="tasks"></a>작업
@@ -34,9 +34,9 @@ Tailwind Traders is doing very well and is expanding their workforce. They have 
 
   * 새 파트너 계정을 추가하는 프로세스를 다이어그램으로 표시합니다. 
 
-  * 그들은 성공적으로 스포츠 의류 공간에서 온라인 소매 업체를 인수했습니다. 
+  * 위의 요구 사항에는 사용할 도구를 포함해야 합니다. 제안된 솔루션의 이점을 세 가지 이상 나열합니다. 
 
-* 또한 이 회사는 마케팅 문헌을 아웃소싱하는 파트너를 배치했습니다. 
+* Tailwind Traders 사용자 ID 솔루션을 개선하기 위한 세 가지 이상의 권장 사항을 제공합니다. 중요도 순서대로 권장 사항의 순위를 지정합니다. 이러한 제안을 하는 이유를 포함합니다. 
 
 **새 애플리케이션 액세스**
 

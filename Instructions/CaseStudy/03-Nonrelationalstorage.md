@@ -7,21 +7,21 @@ casestudy:
 
 ## <a name="requirements"></a>요구 사항
 
-Tailwind Traders wants to reduce storage costs by reducing duplicate content and, whenever applicable, migrating it to the cloud. They would like a solution that centralizes maintenance while still providing world-wide access for customers who browse media files and marketing literature. Additionally, they would like to address the storage of company data files. 
+Tailwind Traders는 중복 콘텐츠를 줄이고 가능할 때마다 클라우드로 마이그레이션하여 스토리지 비용을 줄이려고 합니다. 그들은 미디어 파일 및 마케팅 자료를 검색하는 고객에게 전세계적인 액세스를 제공하면서 유지 관리를 중앙 집중화하는 솔루션을 원합니다. 또한 회사 데이터 파일의 스토리지를 해결하려고 합니다. 
 
 ![비관계형 스토리지 아키텍처](media/Nonrelational%20storage.png)
 
  
 
-* <bpt id="p1">**</bpt>Media files<ept id="p1">**</ept>. Media files include product photos and feature videos that are displayed on the company’s public website, which is developed and maintained in house. When a customer browses to an item, the corresponding media files are displayed. The media files are in different formats, but JPEG and MP4 are the most common. 
+* **미디어 파일**. 미디어 파일에는 사내에서 개발 및 유지 관리되는 회사의 공개 웹 사이트에 표시되는 제품 사진과 기능 비디오가 포함됩니다. 고객이 항목을 찾으면 해당 미디어 파일이 표시됩니다. 미디어 파일은 여러 형식으로 되어 있지만, JPEG와 MP4가 가장 일반적입니다. 
 
-* <bpt id="p1">**</bpt>Marketing literature<ept id="p1">**</ept>. The marketing literature includes customer stories, sales flyers, sizing charts, and eco-friendly manufacturing information. Internal marketing users access the literature via a mapped drive on their Windows workstations. Customers access the literature directly from the company’s public website.
+* **마케팅 문헌**. 마케팅 문헌에는 고객 스토리, 판매 전단, 크기 조정 차트 및 친환경 제조 정보가 포함됩니다. 내부 마케팅 사용자는 Windows 워크스테이션에서 매핑된 드라이브를 통해 문헌에 액세스합니다. 고객은 회사의 공개 웹 사이트에서 직접 문헌에 액세스합니다.
 
-* <bpt id="p1">**</bpt>Corporate documents<ept id="p1">**</ept>. These are internal documents for departments such as human resources and finance. These documents are accessed and managed via an internally developed web application. Legal requires that various documents be retained for a specific period of time. Occasionally documents will need to be maintained longer when legal or HR issues are being investigated. Most corporate documents older than one year are only kept for compliance reasons and are seldom accessed.
+* **회사 문서**. 이들은 인적 자원 및 재무와 같은 부서에 대한 내부 문서입니다. 이러한 문서는 내부적으로 개발된 웹 애플리케이션을 통해 액세스되고 관리됩니다. 법률에 따라 다양한 문서를 특정 기간 동안 보존해야 합니다. 법률 또는 HR 문제를 조사할 때 문서를 더 오래 유지해야 하는 경우가 있습니다. 1년 이상 된 대부분의 회사 문서는 규정 준수를 위해 보관될 뿐, 거의 액세스되지 않습니다.
 
-* Tailwind Traders는 중복 콘텐츠를 줄이고 가능할 때마다 클라우드로 마이그레이션하여 스토리지 비용을 줄이려고 합니다. 
+* **파일 위치**. 모든 파일은 본사 데이터 센터에 로컬로 저장됩니다. 부서 또는 제품 라인별로 구성된 수많은 파일 공유가 있습니다. 데이터 서버는 웹 사이트에 파일을 제공하기 위해 고군분투합니다. 사용량이 많은 시간에 웹 사이트 페이지는 렌더링 속도가 느립니다. 
 
-* 그들은 미디어 파일 및 마케팅 자료를 검색하는 고객에게 전세계적인 액세스를 제공하면서 유지 관리를 중앙 집중화하는 솔루션을 원합니다. 
+* **파일 액세스 빈도**. 일부 제품은 더 인기가 있으며 해당 데이터에 더 자주 액세스합니다. 그러나, 스키 장비와 같은 일부 제품은 해당 시즌 동안에만 액세스합니다. 판매 이벤트는 분명 판매 항목에 많은 관심을 불러일으킵니다. 
 
 ## <a name="tasks"></a>작업
 
@@ -37,6 +37,6 @@ Tailwind Traders wants to reduce storage costs by reducing duplicate content and
 
       * 콘텐츠에 안전하게 액세스하려면 어떻게 하나요?
 
-2.  또한 회사 데이터 파일의 스토리지를 해결하려고 합니다. 
+2.  솔루션은 미디어, 마케팅 문헌 및 회사 문서를 고려해야 합니다. 데이터에 따라 권장 사항이 달라질 수 있습니다. 결정을 논의할 준비를 하세요. 
 
 고품질의 안정적이고 효율적인 클라우드 아키텍처를 생성하기 위해 Well Architected Framework 핵심 요소를 통합하려면 어떻게 해야 할까요?
