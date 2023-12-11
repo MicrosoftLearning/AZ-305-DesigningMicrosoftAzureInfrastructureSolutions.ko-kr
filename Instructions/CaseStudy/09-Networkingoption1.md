@@ -1,13 +1,13 @@
 
-# <a name="design-a-network-infrastructure-solution"></a>네트워크 인프라 솔루션 설계  
+# 네트워크 인프라 솔루션 설계  
 
-## <a name="requirements"></a>요구 사항
+## 요구 사항
 
 Tailwind Traders Enterprise IT 팀은 회사의 워크로드 중 일부를 Azure로 마이그레이션하는 전략을 정의하기 위해 준비하는 동안 필요한 네트워킹 구성 요소를 식별하고 이를 지원하는 데 필요한 네트워크 인프라를 디자인해야 합니다. Tailwind Traders는 해당 작업의 전역 범위를 고려하여 애플리케이션을 호스트하는 여러 Azure 지역을 사용합니다. 이러한 애플리케이션은 대부분 인프라 및 데이터 서비스에 대한 종속성이 있으며, Azure에도 상주합니다. Azure로 마이그레이션된 내부 애플리케이션은 Tailwind Traders 사용자가 계속 액세스할 수 있어야 합니다. Azure로 마이그레이션된 내부 애플리케이션은 외부 고객이 계속 액세스할 수 있어야 합니다. 
 
 초기 네트워킹 설계를 통합하기 위해 Tailwind Traders Enterprise IT 팀은 Azure로 마이그레이션해야 하는 가장 일반적인 워크로드 범주를 나타내는 두 가지 주요 애플리케이션을 선택했습니다.  
 
-### <a name="design---product-catalog-enterprise-application"></a>설계 - 제품 카탈로그 엔터프라이즈 애플리케이션
+### 설계 - 제품 카탈로그 엔터프라이즈 애플리케이션
 
 ![제품 카탈로그 아키텍처](media/catalog.png)
 
@@ -19,7 +19,7 @@ Tailwind Traders Enterprise IT 팀은 회사의 워크로드 중 일부를 Azure
 
 - Tailwind Traders 정보 보안 및 위험 팀은 동일한 애플리케이션의 일부인 Azure VM과 PaaS 서비스 간의 모든 통신이 PaaS 서비스의 퍼블릭 엔드포인트를 통하지 않고 Azure 백본을 통해 이동해야 합니다. 
 
-## <a name="tasks---product-catalog-enterprise-application"></a>작업 - 제품 카탈로그 엔터프라이즈 애플리케이션
+## 작업 - 제품 카탈로그 엔터프라이즈 애플리케이션
 
 1. 제품 카탈로그에 대한 2계층 네트워크 솔루션을 설계합니다. 적절한 경우 설계에는 Azure Front Door, WAF, Azure Firewall 및 Azure Load Balancer가 포함될 수 있습니다. 네트워킹 구성 요소를 가상 네트워크로 그룹화해야 하며 네트워크 보안 그룹을 고려해야 합니다. 설계의 각 구성 요소를 선택한 이유를 설명할 준비를 합니다. 
 

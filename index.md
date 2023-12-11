@@ -4,11 +4,11 @@ permalink: index.html
 layout: home
 ---
 
-# <a name="content-directory"></a>콘텐츠 디렉터리
+# 콘텐츠 디렉터리
 
 각 사례 연구에 대한 하이퍼링크는 아래와 같습니다.
 
-## <a name="case-studies"></a>사례 연구
+## 사례 연구
 
 {% assign casestudy = site.pages | where_exp:"page", "page.url contains '/Instructions/CaseStudy'" %}
 | 모듈 | 사례 연구 |

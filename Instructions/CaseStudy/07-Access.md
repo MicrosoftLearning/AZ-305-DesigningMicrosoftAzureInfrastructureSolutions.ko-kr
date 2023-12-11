@@ -15,7 +15,7 @@ Tailwind Traders는 매우 잘하고 있으며 인력을 확장하고 있습니�
 
   * 온라인 소매점 인수는 Tailwind Traders에 75명의 직원을 추가합니다. 모든 새 사용자는 소매점의 기존 도메인에서 온-프레미스 Active Directory Domain Services 계정을 가집니다.
 
-  * 새 마케팅 파트너에게는 처음에 회사 액세스가 필요한 15명의 직원이 있습니다. 이러한 직원은 파트너의 Microsoft Entra 테넌트에서 이미 Microsoft Entra ID를 가지고 있습니다.  
+  * 새 마케팅 파트너에게는 처음에 회사 액세스가 필요한 15명의 직원이 있습니다. 이러한 직원은 파트너의 Microsoft Entra 테넌트에 이미 Microsoft Entra ID를 가지고 있습니다.  
 
   * 새 직원은 다양한 지리적 위치에 있으며 새 직책에 대한 계정 권한이 필요합니다. 기존 직원 역할에 대한 일부 변경이 예상됩니다. 
 
