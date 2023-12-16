@@ -3,9 +3,9 @@ casestudy:
   title: 앱 아키텍처 솔루션 설계
   module: App architecture solutions
 ---
-# <a name="design-an-app-architecture-solution"></a>앱 아키텍처 솔루션 설계
+# 앱 아키텍처 솔루션 설계
 
-## <a name="requirements"></a>요구 사항
+## 요구 사항
 
 Tailwind Traders는 웹 사이트를 업데이트하여 마케팅에서 제공하는 기존 사진 외에도 고객이 제공한 제품 이미지를 포함하기를 기대합니다. 그들은 사용 중인 제품의 사진이 더 많을 경우 잠재 고객이 과거 고객이 제품 구매 후 얼마나 제품을 좋아했는지 더 잘 느낄 수 있다고 믿습니다. 아래에 설명된 대로 몇 가지 요구 사항이 있습니다.
 
@@ -23,9 +23,9 @@ Tailwind Traders는 웹 사이트를 업데이트하여 마케팅에서 제공�
 
  
 
-## <a name="task"></a>Task
+## Task
 
-회사 웹 사이트에 고객 이미지를 추가하기 위한 아키텍처를 설계합니다.  
+회사 웹 사이트에 고객 이미지를 추가하기 위한 아키텍처를 설계합니다. 
 
 * 이미지를 어디에 저장해야 하나요?
 

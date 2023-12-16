@@ -3,11 +3,11 @@ casestudy:
   title: Fabrikam Residences
   module: Logging and monitoring solutions
 ---
-# <a name="case-study-fabrikam-residences"></a>사례 연구: Fabrikam Residences
+# 사례 연구: Fabrikam 레지던스
 
-## <a name="requirements"></a>요구 사항
+## 요구 사항
 
-**이 사례 연구에서는 다음 모듈 및 사례 연구를 완료했어야 합니다.  컴퓨팅, 관계형 데이터, 비관계형 데이터, 인증, 애플리케이션 아키텍처**
+**이 사례 연구를 수행하려면 컴퓨팅, 관계형 데이터, 비관계형 데이터, 인증, 애플리케이션 아키텍처 등의 모듈 및 사례 연구를 완료해야 합니다.**
 
 귀하는 매우 성공적이고 급속한 성장을 경험하고 있는 Fabrikam Residences에서 새로운 직책을 맡았습니다. Fabrikam Residences는 신축 주택과 대대적인 주택 개조를 위한 건축 계약업체이며, 양질의 건물을 제공하고 경쟁사보다 새로운 통합 주택 기술을 제공함으로써 성공을 거두었습니다.  
 
@@ -17,7 +17,7 @@ casestudy:
 
 이 회사는 지난 2년 동안 엄청난 성장을 보였습니다. 이 회사는 향후 12-18개월 동안 규모가 두 배가 될 것으로 추정하고 있습니다. 지역 시장에서 이러한 급속한 성장을 거두면서, 회사는 현재 지역 시장 외부로 확장할 계획이 없습니다.
 
-## <a name="current-situation"></a>현재 상황
+## 현재 상황
 
 Fabrikam 본사는 단일 위치에서 작은 데이터 센터를 운영합니다. 데이터 센터는 회사의 **PM(Project Management) 소프트웨어**를 호스트합니다.
 
@@ -35,7 +35,7 @@ Fabrikam 본사는 단일 위치에서 작은 데이터 센터를 운영합니�
 
 ![HVAC, 보안 및 자동화 앱 다이어그램](media/software.png)
 
-## <a name="requirements"></a>요구 사항 
+## 요구 사항 
 
 **Project Management 소프트웨어**
 
@@ -61,7 +61,7 @@ Fabrikam 본사는 단일 위치에서 작은 데이터 센터를 운영합니�
 
 - 보안 제어를 구현하고 회사가 업계 표준 모범 사례와 일치하는 방법을 설명하는 주간 보고서를 제공합니다.
 
-## <a name="tasks"></a>작업 
+## 작업 
 
 1. Project Management 소프트웨어에 대한 솔루션을 설계합니다. 설계의 각 구성 요소를 선택한 이유와 이것이 솔루션 요구 사항을 충족하는 방법을 설명할 준비를 합니다.
 
