@@ -3,11 +3,11 @@ casestudy:
   title: Fabrikam Residences
   module: Logging and monitoring solutions
 ---
-# 사례 연구: Fabrikam 레지던스
+# 사례 연구: Fabrikam Residences
 
 ## 요구 사항
 
-**이 사례 연구를 수행하려면 컴퓨팅, 관계형 데이터, 비관계형 데이터, 인증, 애플리케이션 아키텍처 등의 모듈 및 사례 연구를 완료해야 합니다.**
+**이 사례 연구에서는 다음 모듈 및 사례 연구를 완료했어야 합니다.  컴퓨팅, 관계형 데이터, 비관계형 데이터, 인증, 애플리케이션 아키텍처**
 
 귀하는 매우 성공적이고 급속한 성장을 경험하고 있는 Fabrikam Residences에서 새로운 직책을 맡았습니다. Fabrikam Residences는 신축 주택과 대대적인 주택 개조를 위한 건축 계약업체이며, 양질의 건물을 제공하고 경쟁사보다 새로운 통합 주택 기술을 제공함으로써 성공을 거두었습니다.  
 
